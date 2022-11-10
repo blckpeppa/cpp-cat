@@ -6,13 +6,12 @@
 using namespace std;
 int main(){
 	// variable declaration
-	int gross_salary;
 	float net_salary;
 	
 	//set gross salary as constant
-	const gross_salary = 10000;
+	const int gross_salary = 10000;
 	//set PAYE as constant
-	const PAYE = 0.25 * gross_salary;
+	const float PAYE = 0.25 * gross_salary;
 
 	
 	cout << "This program calculates tax payable and net salary of employee \n";
