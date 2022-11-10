@@ -4,18 +4,27 @@
 //        volume = pie*radius*radius*height
 
 #include <iostream>
-
 using namespace std;
+
 int main(){
 	//set pie as constant
-	const pie = 3.141592;
+	const float pie = 3.141592;
 	// variable declaration
-	float radius;
-	float height;
+	float radius,height,area,volume;
 	
 	cout << "This program calculates area and volume of a cylinder \n";
-	cin >> "Enter radius value: \n" >> radius;
-	cout << radius;
+	cout << "Enter radius value: \n";
+	cin >> radius;
+	cout << "Enter height value: \n";
+	cin >> height;	
+	
+// 	formula area
+	area = (2*pie*radius*height)+ 2*pie*radius*radius;
+// 	formula volume
+    volume = pie*radius*radius*height;
+    
+	cout << "the area is "<< area <<"\n";
+	cout << "the volume is "<< volume <<"\n";
 	
 	return 0;
 
